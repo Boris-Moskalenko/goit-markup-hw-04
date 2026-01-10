@@ -165,6 +165,7 @@ img {
     color: #ffffff;
     background-color:#4D5AE5 ;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -181,7 +182,18 @@ img {
 .features-item {
     width: calc((100% - 72px) / 4);
 }
+.features-icons-box {
+    padding: 24px 100px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #8e8f99;;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+}
 .features-subtitle {
+    padding-top: 8px;
     padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -240,6 +252,27 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 }
+.team-soc-list {
+    display: flex;
+    gap: 24px;
+    padding-top: 8px;
+}
+.team-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-soc-link:hover {
+    background-color: #404bbf;
+}
+.team-link-icon {
+    fill: #F4F4FD;
+}
 /* ---------------------------------------------PORTFOLIO---------------------------------------------------- */
 .portfolio {
 padding: 120px 0;
@@ -259,11 +292,32 @@ flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
 }
-/* .portfolio-item {
-width: calc((100% - 5 * 24px) / 6);
-} */
+.portfolio-item:hover .portfolio-img-text {
+    transform: translateY(0);
+}
+.portfolio-item:hover {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 .portfolio-img {
 
+}
+.portfolio-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-img-text {
+    position: absolute;
+    top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background-color: #4d5ae5;
+    padding: 40px 32px 164px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
 }
 .portfolio-subtitle-conteiner {
 padding: 32px 16px;
