@@ -355,7 +355,6 @@ color: #F4F4FD;
 }
 .footer-text {
 max-width: 264px;
-margin: 0 864px 0 0;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;
@@ -366,6 +365,11 @@ color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+}
+.footer-soc-list {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
 }
 .footer-soc-link {
     display: flex;
@@ -382,4 +386,11 @@ color: #F4F4FD;
 }
 .footer-link-icon {
     fill: #F4F4FD;
+}
+.foter-logo-box {
+
+}
+.footer-container {
+    display: flex;
+    gap: 120px;
 }
