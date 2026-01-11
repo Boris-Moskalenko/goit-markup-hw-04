@@ -186,12 +186,12 @@ img {
     width: calc((100% - 72px) / 4);
 }
 .features-icons-box {
-    padding: 24px 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 24px 0;
     border: 1px solid #8e8f99;;
     border-radius: 4px;
-    width: 264px;
     height: 112px;
     background-color: #F4F4FD;
 }
@@ -300,7 +300,7 @@ row-gap: 48px;
     transform: translateY(0);
 }
 .portfolio-item {
- transition: box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
